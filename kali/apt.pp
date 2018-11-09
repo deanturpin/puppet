@@ -18,5 +18,5 @@ package { iputils-tracepath: }
 package { ipcalc: }
 
 exec { update:
-	command => "/usr/bin/apt full-upgrade || false"
+	command => "/usr/bin/apt full-upgrade || true"
 }
