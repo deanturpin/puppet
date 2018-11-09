@@ -1,3 +1,6 @@
+Started configuring as a complete master/agent setup but actually just a client
+is good enough for a single laptop.
+
 # Server
 ```
 apt install puppetserver
