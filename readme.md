@@ -5,7 +5,7 @@
 apt install puppet puppet-module-puppetlabs-apt
 ```
 
-# Run Puppet manually
+# Run Puppet agent manually
 ```bash
 puppet apply kali.pp
 ```
