@@ -1,4 +1,5 @@
 $_gnome = "/usr/bin/gsettings set"
+
 exec { touchpad:
 	command => "${_gnome} org.gnome.desktop.peripherals.touchpad tap-to-click true"
 }
