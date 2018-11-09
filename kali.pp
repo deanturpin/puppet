@@ -12,7 +12,7 @@ file { $_githooks:
 	command => "/usr/bin/git config --global core.hooksPath ${_githooks} || true"
 }
 
-# Configure Gnome
+# Gnome
 $_gnome = "/usr/bin/gsettings set"
 exec { touchpad:
 	command => "${_gnome} org.gnome.desktop.peripherals.touchpad tap-to-click true"
@@ -26,7 +26,12 @@ exec { ambient-enabled:
 	command => "${_gnome} org.gnome.settings-daemon.plugins.power ambient-enabled false"
 }
 
-# APT packages
+# Bash
+file { "/root/.bash_aliases":
+	source => "https://raw.githubusercontent.com/deanturpin/config/master/.bash_aliases"
+}
+
+# APT
 include apt
 package { vim: }
 package { inotify-tools: }
@@ -44,4 +49,3 @@ package { fonts-indic: }
 package { sloccount: }
 package { iputils-tracepath: }
 package { ipcalc: }
-
