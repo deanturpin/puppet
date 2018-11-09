@@ -1,5 +1,3 @@
-# Using the Puppet client standalone
-
 # Install Puppet client and modules
 ```bash
 apt install puppet puppet-module-puppetlabs-apt
