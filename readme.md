@@ -8,6 +8,7 @@ Warning: Setting cadir is deprecated.
 package { 'puppetmaster':
   ensure => '5.5.6-1',
 }
+```
 
 /etc/puppet/puppet.conf
 ```
