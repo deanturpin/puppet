@@ -1,3 +1,3 @@
 all:
-	apt install puppet puppet-module-puppetlabs-apt
+	apt install -y puppet puppet-module-puppetlabs-apt
 	puppet apply kali

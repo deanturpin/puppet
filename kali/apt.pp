@@ -16,3 +16,7 @@ package { fonts-indic: }
 package { sloccount: }
 package { iputils-tracepath: }
 package { ipcalc: }
+
+exec { update:
+	command => "/usr/bin/apt full-upgrade || false"
+}
