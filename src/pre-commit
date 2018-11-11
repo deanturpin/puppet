@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for file in $(git diff-index --cached --name-only HEAD); do
+  if [[ -e "$file" && "$file" == *.cpp || "$file" == *.h ]]; then
+    clang-format -style="{BasedOnStyle: llvm, AlignConsecutiveAssignments: true}" -i "$file"
+    git add "$file"
+  fi
+done
