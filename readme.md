@@ -10,4 +10,4 @@ cd /tmp/puppet
 make
 ```
 
-See [Puppet script](kali.pp) and [server configuration](server.md).
+See [server configuration](doc/server.md).
