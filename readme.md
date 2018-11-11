@@ -7,7 +7,8 @@ git clone https://github.com/deanturpin/puppet /tmp/puppet
 
 # Run Puppet client
 cd /tmp/puppet
-make
+puppet apply kali
+# puppet apply ubuntu
 ```
 
 See [server configuration](doc/server.md).
