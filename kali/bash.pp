@@ -1,3 +1,3 @@
-file { "/root/.bash_aliases":
-	source => "/tmp/puppet/src/.bash_aliases"
+file { '/root/.bash_aliases':
+  source => '/tmp/puppet/src/.bash_aliases'
 }
